@@ -4,6 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
+  min-width: 380px
 }
 a {
   text-decoration: none;
@@ -87,33 +88,43 @@ a {
 */
 .jumbophone {
   position: relative;
+  height: 500px;
+  /* border: 1px solid green; */
+  margin-bottom: 150px;
+}
+.jumbophone .jumbophone_bg {
+  width: 100%;
   height: 370px;
   background-image: url("../img/HelbizBanner.jpg");
   background-position: top left;
   background-size: 1400px;
-  /* margin-bottom: 250px; */
+  background-repeat: repeat-x;
 }
 .jumbophone .jumbophone_content {
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
+  /* border: 1px solid black; */
+  height: 100%;
 }
 .jumbophone .jumbophone_content img {
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
 }
-.jumbophone .jumbophone_content .textpos {
+.jumbophone .jumbophone_content .textbox {
   position: relative;
-  height: 410px;
+  height: 500px;
 }
 .jumbophone .jumbophone_content .text {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 60px;
 }
 
 .col_lg_3, .col_lg_6 {
   /* border: 1px solid red; */
+  /* height: 100%; */
 }
 
 /*************************************
@@ -123,17 +134,77 @@ a {
   position: relative;
   height: 400px;
   background-image: url("../img/ScooterHelbiz-2400.jpg");
-  background-position: center;
-  background-size: 1000px;
+  background-position: top left;
+  background-size: 1170px;
   margin-bottom: 40px;
 }
 .jumbomobility .jumbomobility_content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  right: 120px;
+  transform: translateY(-50%);
+  width: 270px;
   color: white;
   text-align: center;
+}
+.jumbomobility .jumbomobility_content .subtitle {
+  font-size: 1.6em;
+}
+.jumbomobility .jumbomobility_content .textlink {
+  color: white;
+}
+
+/*************************************
+    TWO BOXES
+*/
+.two_boxes {
+  text-align: center;
+  padding: 30px 0 0;
+  height: 400px;
+  color: white;
+}
+
+.two_boxes.bg_1 {
+  background-color: #354b69;
+  background-image: url("../img/HelbiZAPP.png");
+  background-position: 100% 150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+.two_boxes.bg_2 {
+  background-image: url("../img/Cities-1500.jpg");
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 15px;
+}
+.two_boxes.bg_1 .textlink,
+.two_boxes.bg_2 .textlink {
+  color: white;
+}
+
+/*************************************
+    MOSAIC
+*/
+
+
+/*************************************
+    OVERLAY
+*/
+.header_top .overbox .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.header_top .overbox:hover .overlay {
+  /* display: block; */
 }
 
 /*************************************
@@ -153,7 +224,7 @@ a {
   margin-bottom: 20px;
 }
 .title {
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -185,15 +256,26 @@ a {
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 
+  .jumbophone {
+    margin-bottom: 600px;
+  }
   .jumbophone .jumbophone_content {
     top: 200px;
   }
-  .jumbophone .jumbophone_content img {
-    width: 100%;
+  .jumbomobility .jumbomobility_content {
+    width: 200px;
   }
-
+  .two_boxes {
+    height: 300px;
+  }
   .payoff {
     font-size: 4em;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.5em;
   }
 
   /* on/off */
@@ -208,16 +290,32 @@ a {
 
 @media screen and (max-width: 768px) {
 
+  .jumbophone {
+    margin-bottom: 300px;
+  }
   .jumbophone .jumbophone_content {
     top: 200px;
   }
-  .jumbophone .jumbophone_content img {
-    width: 100%;
+  .jumbomobility .jumbomobility_content {
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .two_boxes.bg_1,
+  .two_boxes.bg_2 {
+    margin: 0 0 40px 0;
   }
 
   .payoff {
     /* white-space: normal; */
     font-size: 2.5em;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1.5em;
   }
 
   /* on/off */
