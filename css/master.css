@@ -138,7 +138,7 @@ a {
   margin-top: 100px;
   width: 70%;
   margin: 0 auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .jumbo_phone .jumbo_phone_content img {
   margin-top: 100px;
@@ -251,39 +251,47 @@ a {
     FOOTER
 */
 footer {
-  padding: 100px 0;
+  padding: 100px 10px;
   color: white;
   background-color: black;
 }
-footer .logo {
+footer .foot1 .logo {
   font-size: 2.5em;
 }
 footer ul {
   list-style: none;
 }
-footer ul li:not(:first-child) {
+footer .foot1 ul li:not(:first-child) {
   font-size: 1.3em;
-  padding: 10px 0;
+  padding: 8px 0;
   color: grey;
 }
-footer ul li:first-child {
+footer .foot1 ul li:first-child {
   font-size: 1.7em;
   font-weight: 500;
   padding: 10px 0;
 }
 footer .foot2 {
-  line-height: 100px;
-  vertical-align: middle;
-  margin-top: 1px solid gray;
-  margin-bottom: 1px solid gray;
+  line-height: 80px;
+  border-top: 1px solid #212121;
+  border-bottom: 1px solid #212121;
 }
 footer .foot2 .social {
   color: white;
+  font-size: 1.7em;
+  font-weight: 500;
 }
 footer .foot2 .social a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 15px;
 }
-
+footer .foot3 {
+  text-align: center;
+}
+footer .foot3 img {
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
 /*************************************
     UNIVERSALS
 */
