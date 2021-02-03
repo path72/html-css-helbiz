@@ -26,7 +26,6 @@ a {
   font-weight: bold;
 }
 .header_top img {
-  display: inline-block;
   vertical-align: middle;
 }
 .header_top ul.menu_inline {
@@ -51,6 +50,43 @@ a {
 }
 
 /*************************************
+    MENU OVERLAY
+*/
+.header_top .overlay {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transition: top 0.5s ease 0s;
+}
+.header_top .hamburger #btnControl {
+  display: none;
+}
+.header_top .hamburger #btnControl + label .fa-times {
+  display: none;
+  line-height: 80px;
+  margin: 2px 4px 0 0;
+}
+.header_top .hamburger #btnControl:checked + label .overlay {
+  top: 80px;
+}
+.header_top .hamburger #btnControl:checked + label .fa-bars {
+  display: none;
+}
+.header_top .hamburger #btnControl:checked + label .fa-times {
+  display: block;
+}
+.header_top .overlay .ovarlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*************************************
     JUMBOTRON
 */
 .jumbotron {
@@ -58,6 +94,8 @@ a {
   height: 500px;
   background-image: url("../img/hero-bg.jpg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 80px 0 40px;
 }
 .jumbotron .jumbo_content {
@@ -179,7 +217,7 @@ a {
 }
 .two_boxes.bg_2 {
   background-image: url("../img/Cities-1500.jpg");
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -200,46 +238,38 @@ a {
 /*************************************
     MOSAIC
 */
-
-/*************************************
-    FOOTER
-*/
-
-/*************************************
-    MENU OVERLAY
-*/
-.header_top .overlay {
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  z-index: 9999;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  transition: top 0.5s ease 0s;
+.mosaic {
+  position: relative;
+  height: 400px;
+  background-image: url("../img/Social-Banner.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
 }
-.header_top #btnControl {
-  display: none;
-}
-.header_top #btnControl + label .fa-times {
-  display: none;
-  line-height: 80px;
-}
-.header_top #btnControl:checked + label .overlay {
-  top: 80px;
-}
-.header_top #btnControl:checked + label .fa-bars {
-  display: none;
-}
-.header_top #btnControl:checked + label .fa-times {
-  display: block;
-}
-.header_top .overlay .ovarlay_content {
+.mosaic .mosaic_content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 45px 120px;
 }
+.mosaic .mosaic_content .title {
+  font-size: 2.6em;
+  margin-bottom: 5px;
+}
+.mosaic .mosaic_content .social {
+  font-size: 2.6em;
+}
+.mosaic .mosaic_content .social a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*************************************
+    FOOTER
+*/
 
 /*************************************
     UNIVERSALS
