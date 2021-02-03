@@ -127,10 +127,29 @@ a {
 /*************************************
     JUMBOPHONE
 */
+.jumbo_phone {
+  height: 600px;
+  background-image: url("../img/HelbizBanner.jpg");
+  background-position: top left;
+  background-size: 1400px;
+  background-repeat: repeat-x;
+}
+.jumbo_phone_content {
+  margin-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+.jumbo_phone .jumbo_phone_content img {
+  width: 100%;
+  /* max-width: 700px; */
+}
+
+/*
 .jumbophone {
   position: relative;
   height: 500px;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   margin-bottom: 150px;
 }
 .jumbophone .jumbophone_bg {
@@ -146,7 +165,7 @@ a {
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  /* border: 1px solid black; */
+  border: 1px solid black;
   height: 100%;
 }
 .jumbophone .jumbophone_content img {
@@ -162,7 +181,7 @@ a {
   left: 0;
   bottom: 60px;
 }
-
+ */
 .col_lg_3, .col_lg_6 {
   /* border: 1px solid red; */
   /* height: 100%; */
@@ -270,6 +289,39 @@ a {
 /*************************************
     FOOTER
 */
+footer {
+  padding: 100px 0;
+  color: white;
+  background-color: black;
+}
+footer .logo {
+  font-size: 2.5em;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li:not(:first-child) {
+  font-size: 1.3em;
+  padding: 10px 0;
+  color: grey;
+}
+footer ul li:first-child {
+  font-size: 1.7em;
+  font-weight: 500;
+  padding: 10px 0;
+}
+footer .foot2 {
+  line-height: 100px;
+  vertical-align: middle;
+  margin-top: 1px solid gray;
+  margin-bottom: 1px solid gray;
+}
+footer .foot2 .social {
+  color: white;
+}
+footer .foot2 .social a:not(:last-child) {
+  margin-right: 20px;
+}
 
 /*************************************
     UNIVERSALS
