@@ -272,6 +272,7 @@ footer .foot2 {
   line-height: 80px;
   border-top: 1px solid #212121;
   border-bottom: 1px solid #212121;
+  margin: 20px 0;
 }
 footer .foot2 .social {
   color: white;
@@ -372,6 +373,15 @@ footer .foot3 img {
   .two_boxes.bg_1,
   .two_boxes.bg_2 {
     margin: 0 0 40px 0;
+  }
+  footer [class^="foot"] {
+    text-align: center;
+  }
+  footer .foot1 {
+    line-height: 12px;
+  }
+  footer .lowlinks {
+    line-height: 25px;
   }
   .payoff {
     font-size: 2.5em;
