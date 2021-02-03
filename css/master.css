@@ -42,9 +42,12 @@ a {
   line-height: 100%;
   border-right: 1px solid black;
 }
-.hamburger {
+.header_top .hamburger {
   text-align: right;
   font-size: 4em;
+}
+.header_top .hamburger .fas {
+  cursor:pointer;
 }
 
 /*************************************
@@ -149,6 +152,7 @@ a {
 }
 .jumbomobility .jumbomobility_content .subtitle {
   font-size: 1.6em;
+  font-weight: 400;
 }
 .jumbomobility .jumbomobility_content .textlink {
   color: white;
@@ -162,6 +166,7 @@ a {
   padding: 30px 0 0;
   height: 400px;
   color: white;
+  margin-bottom: 40px;
 }
 
 .two_boxes.bg_1 {
@@ -180,31 +185,60 @@ a {
   background-size: 100%;
   margin-left: 15px;
 }
+.two_boxes .title {
+  font-size: 2.6em;
+}
+.two_boxes .subtitle {
+  font-size: 1.7em;
+}
 .two_boxes.bg_1 .textlink,
 .two_boxes.bg_2 .textlink {
   color: white;
+  font-weight: 400;
 }
 
 /*************************************
     MOSAIC
 */
 
+/*************************************
+    FOOTER
+*/
 
 /*************************************
-    OVERLAY
+    MENU OVERLAY
 */
-.header_top .overbox .overlay {
-  display: none;
+.header_top .overlay {
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   z-index: 9999;
   width: 100vw;
   height: 100vh;
   background-color: white;
+  transition: top 0.5s ease 0s;
 }
-.header_top .overbox:hover .overlay {
-  /* display: block; */
+.header_top #btnControl {
+  display: none;
+}
+.header_top #btnControl + label .fa-times {
+  display: none;
+  line-height: 80px;
+}
+.header_top #btnControl:checked + label .overlay {
+  top: 80px;
+}
+.header_top #btnControl:checked + label .fa-bars {
+  display: none;
+}
+.header_top #btnControl:checked + label .fa-times {
+  display: block;
+}
+.header_top .overlay .ovarlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /*************************************
@@ -263,19 +297,13 @@ a {
     top: 200px;
   }
   .jumbomobility .jumbomobility_content {
-    width: 200px;
+    /* width: 200px; */
   }
   .two_boxes {
     height: 300px;
   }
   .payoff {
     font-size: 4em;
-  }
-  .title {
-    font-size: 2em;
-  }
-  .subtitle {
-    font-size: 1.5em;
   }
 
   /* on/off */
