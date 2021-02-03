@@ -118,7 +118,6 @@ a {
   padding: 70px 0 70px;
   background-color: #fafafa;
   margin: 0 15px 20px;
-  /* border: 1px solid red; */
 }
 .bike_box img {
   width: 35%;
@@ -138,7 +137,6 @@ a {
   margin-top: 100px;
   width: 70%;
   margin: 0 auto;
-  /* border: 1px solid green; */
 }
 .jumbo_phone .jumbo_phone_content img {
   margin-top: 100px;
@@ -186,7 +184,6 @@ a {
   color: white;
   margin-bottom: 40px;
 }
-
 .two_boxes.bg_1 {
   background-color: #354b69;
   background-image: url("../img/HelbiZAPP.png");
@@ -292,6 +289,7 @@ footer .foot3 img {
   border: 1px solid grey;
   border-radius: 5px;
 }
+
 /*************************************
     UNIVERSALS
 */
@@ -344,9 +342,6 @@ footer .foot3 img {
   .jumbo_phone .jumbo_phone_content img {
     margin-top: 190px;
   }
-  .jumbomobility .jumbomobility_content {
-    /* width: 200px; */
-  }
   .two_boxes {
     height: 300px;
   }
@@ -361,7 +356,6 @@ footer .foot3 img {
   .display_md_block {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -379,9 +373,7 @@ footer .foot3 img {
   .two_boxes.bg_2 {
     margin: 0 0 40px 0;
   }
-
   .payoff {
-    /* white-space: normal; */
     font-size: 2.5em;
   }
   .title {
@@ -398,9 +390,7 @@ footer .foot3 img {
   .display_xs_block {
     display: block;
   }
-
 }
-
 
 /*************************************
     UTILITY
